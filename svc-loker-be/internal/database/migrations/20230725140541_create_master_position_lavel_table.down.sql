@@ -1,0 +1,1 @@
+DROP IF EXISTS position_levels;
