@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "2badf106-4c55-48f1-b7e9-34a4364dbd81",
+		"name": "Taldio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5515773"
+	},
+	"item": [
+		{
+			"name": "svc-loker-taldio Copy",
+			"item": [
+				{
+					"name": "List Employment Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/employment-types",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"employment-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Position Level",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/position-levels",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"position-levels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/jobs?title=developer&type_id=1,3&level_id=4,2,3",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"jobs"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "developer"
+								},
+								{
+									"key": "type_id",
+									"value": "1,3"
+								},
+								{
+									"key": "level_id",
+									"value": "4,2,3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "By ID Jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/api/jobs/454abf6d-2bb7-11ee-82d7-0242ac1a0002",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"jobs",
+								"454abf6d-2bb7-11ee-82d7-0242ac1a0002"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
