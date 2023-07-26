@@ -156,7 +156,26 @@ Pendidikan terakhir D3/S1 Jurusan terkait</p>
 <p><strong><big>Benefit</big></strong><br />
 We offer a competitive salary, flexible working hours, and a fully remote work environment.&nbsp;</p>
 ',5,1),
-    (UUID(), 'Project Support', '',1,2),
+    (UUID(), 'Project Support', '<p><strong><big>Job Description</big></strong></p>
+
+<ul>
+	<li>Project Support</li>
+	<li>Self-motivated, passionate &amp; eager to improve by keeping up-to-date with the latest trends in back-end development</li>
+	<li>Good communication &amp; teamwork skills. Capable of collaborating with other team members</li>
+	<li>Good self-managing skills, particularly with keeping up with timeline/deadline</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong><big>Minimum Qualification</big></strong><br />
+Pendidikan terakhir D3/S1 Jurusan terkait</p>
+
+<p><strong><big>Minimum Experience</big></strong><br />
+2 year(s)</p>
+
+<p><strong><big>Benefit</big></strong><br />
+We offer a competitive salary, flexible working hours, and a fully remote work environment.&nbsp;</p>
+',1,2),
     (UUID(), 'UI UX Designer', '<p><strong><big>Job Description</big></strong></p>
 
 <ul>
