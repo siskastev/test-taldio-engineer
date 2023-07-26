@@ -14,4 +14,5 @@ func RegisterRoutes(route fiber.Router) {
 	service := serviceJob.NewService(repo)
 	handler := handlerJob.NewHandler(service)
 	route.Get("/jobs", handler.GetAll)
+	route.Get("/jobs/:id", handler.GetByID)
 }

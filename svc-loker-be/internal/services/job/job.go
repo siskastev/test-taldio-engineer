@@ -40,3 +40,18 @@ func (j *jobService) GetList(filters models.JobFilter) ([]models.JobResponse, er
 
 	return response, nil
 }
+
+func (j *jobService) GetByID(id string) (models.JobResponse, error) {
+	result, err := j.jobRepo.GetByID(id)
+	if err != nil {
+		return models.JobResponse{}, err
+	}
+
+	return models.JobResponse{
+		ID:                 result.ID,
+		Title:              result.Title,
+		Description:        result.Description,
+		EmploymentTypeName: result.EmploymentTypeName,
+		PositionLevelName:  result.PositionLevelName,
+	}, err
+}

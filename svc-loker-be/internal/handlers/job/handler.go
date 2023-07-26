@@ -29,3 +29,15 @@ func (h *Handler) GetAll(c *fiber.Ctx) error {
 
 	return response.Success(c, result)
 }
+
+func (h *Handler) GetByID(c *fiber.Ctx) error {
+
+	jobID := c.Params("id")
+	jobResponse, err := h.jobSvc.GetByID(jobID)
+
+	if err != nil {
+		return response.Error(c, fiber.StatusNotFound, "Job not found")
+	}
+
+	return response.Success(c, jobResponse)
+}
